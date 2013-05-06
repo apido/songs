@@ -47,5 +47,5 @@ songs = [
   ]
 
 
-$.Mustache.load '_song_record.mustache', ->
+$.Mustache.load '_song_record.html', ->
   $('#songs').mustache '_songRecord', songs
