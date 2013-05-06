@@ -1,6 +1,3 @@
-embededPlayer = ->
-  return "AudioPlayer.embed 'zic/20130428 101431.mp3', soundFile: 'zic/20130428 101431.mp3'"
-
 songs = [
   '20130428_101431',
   '20130428_101626',

@@ -1,34 +1,80 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="fr">
-  <head profile="http://gmpg.org/xfn/11">
+<!DOCTYPE html>
+<html lang="en">
 
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="content-language" content="fr" />
-    <meta http-equiv="expires" content="72000" />
-    <meta http-equiv="imagetoolbar" content="no" />
-    <meta http-equiv="pragma" content="no-cache" />
-
-    <meta name="author" content="Pierre Merlin" />
-    <meta name="description" lang="fr" content="Enregistrements pour les choeurs du mariage de Anne et Polo" />
-
-    <meta name="robots" content="none" />
-
-    <title>Répétition du mariage de Polo et Anne</title>
-
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
+    <head>
+        <meta charset="utf-8">
+        <title>Répétition du mariage de Polo et Anne</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Enregistrements pour les choeurs du mariage de Anne et Polo">
+        <meta name="author" content="Pierre Merlin">
+        <!-- Le styles -->
+        <!-- TODO: make sure bootstrap.min.css points to BootTheme generated file
+        -->
+        <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+              }
+              .sidebar-nav {
+                padding: 9px 0;
+              }
+        </style>
+        <!-- TODO: make sure bootstrap-responsive.min.css points to BootTheme
+        generated file -->
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css"
+        rel="stylesheet">
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <!-- Fav and touch icons -->
+        <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link href="main.css" rel="stylesheet">
     <script type="text/javascript" src="audio-player.js"></script>
   </head>
 
   <body>
-
-    <div id='songs'></div>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nacollapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Répétition de la chorale pour le mariage de <Anne et Paul-Antoine</b></a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row-fluid"
+              <!--/span-->
+        <div class="span12">
+          <div class="hero-unit">
+                       <h1>Chantez bien !</h1>
+                      <p>Prochaine répétition générale le lundi 20 mai à 9h30 danla salle annexe
+                          à l'église de Sully-la-Tour.&nbsp;</p>
+          </div>
+          <div id='songs'></div>
+        </div>
+        <!--/span-->
+      </div>
+      <!--/row-->
+      <hr>
+      <footer>
+        <p>APiDo.org</p>
+      </footer>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="lib/jquery.mustache.js"></script>
     <script type="text/javascript" src="lib/mustache.js"></script>
     <script type="text/javascript" src="songs.js"></script>
-
   </body>
+
 </html>
