@@ -1,27 +1,29 @@
 <script id="_songRecord" type="text/html">
 {{#.}}
-                        <div class="span4">
-                             <h2>Toto{{title}}</h2>
+  <div class="span4">
+    <h2>{{title}}</h2>
 
-                            <p>desc{{.}}</p>
-                            <audio controls>
-                                <source src="zic/{{.}}.mp3" type="audio/mp3">
-                                <object type="application/x-shockwave-flash"
-    name={{{.}}}
-    id={{{.}}}
-    style="outline: none" data="player.swf" width="128" height="24">
-    <param name="bgcolor" value="#FFFFFF">
-    <param name="wmode" value="transparent">
-    <param name="menu" value="false">
-    <param name="flashvars"
-    value="soundFile=zic/{{.}}.mp3&amp;titles= &amp;playerID=musik-filmmusik-1&amp;initialvolume=100&amp;bg=000000&amp;left=000000&amp;leftbg=000000&amp;rightbg=000000&amp;rightbghover=FFFFFF&amp;righticon=FFFFFF&amp;righticonhover=000000&amp;lefticon=FFFFFF&amp;volslider=FFFFFF&amp;voltrack=000000">
-  </object>
-                            </audio>
-                        </div>
-
-
-
-
+    <p>{{desc}}</p>
+    {{#records}}
+      <p>{{label}}</p>
+      <audio controls>
+        <source src="zic/{{file}}.mp3" type="audio/mp3">
+        <object type="application/x-shockwave-flash"
+          name={{{file}}}
+          id={{{file}}}
+          style="outline: none" data="player.swf" width="128" height="24">
+          <param name="bgcolor" value="#FFFFFF">
+          <param name="wmode" value="transparent">
+          <param name="menu" value="false">
+          <param name="flashvars"
+            value="soundFile=zic/{{file}}.mp3&amp;
+            titles={{label}}&amp;
+            playerID=musik-filmmusik-1&amp;
+            initialvolume=100&amp;bg=000000&amp;left=000000&amp;leftbg=000000&amp;rightbg=000000&amp;rightbghover=FFFFFF&amp;righticon=FFFFFF&amp;righticonhover=000000&amp;lefticon=FFFFFF&amp;volslider=FFFFFF&amp;voltrack=000000">
+        </object>
+      </audio>
+    {{/records}}
+  </div>
 {{/.}}
 </script>
 
